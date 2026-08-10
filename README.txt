@@ -1,27 +1,82 @@
-PROF. RAJA ZAHID SIDDIQUE PORTFOLIO
-================================
+# Prof. Raja Zahid Siddique
 
-FREE HOSTING — GITHUB PAGES
-1. Create a GitHub account.
-2. Create a new public repository, e.g. raja-portfolio.
-3. Upload index.html, style.css and script.js.
-4. Repository Settings > Pages > Deploy from branch > main > /(root).
-5. Your site will receive a free github.io address.
+**Professor | IT Specialist | Researcher | Technology Consultant**
 
-FREE HOSTING — CLOUDFLARE PAGES
-1. Create a Cloudflare account.
-2. Pages > Create a project > Connect to Git.
-3. Select the repository.
-4. Framework preset: None.
-5. Build command: leave blank.
-6. Output directory: / (root).
-7. Deploy.
+Welcome to my GitHub profile.
 
-BEFORE PUBLISHING
-- Replace YOUR_EMAIL@example.com in index.html.
-- Add your LinkedIn URL.
-- Put your CV in this folder as cv.pdf.
-- Replace the RZS portrait box with your professional photo.
-- Add your final publication list and social links.
+I am an Information Technology professional and educator with **20+ years of experience** in IT, higher education, technical support, systems, networking, software development, and technology management.
 
-The website is static HTML/CSS/JS, so no paid server is required.
+## About Me
+
+My professional work combines **Information Technology, education, research, and practical technology solutions**. I have worked in academic and technical environments in Pakistan, the UAE, and the Philippines.
+
+My interests include:
+
+* Artificial Intelligence
+* Information Technology
+* Cybersecurity & Privacy
+* Data & Analytics
+* Software Development
+* Networking & Systems
+* IT Education
+* Digital Transformation
+
+## Education
+
+**Master's in Information Technology — 2003**
+
+## Professional Experience
+
+My experience includes roles in:
+
+* Higher Education & IT Teaching
+* MIS & Information Systems
+* IT Engineering
+* Technical Support
+* Networking & Systems Administration
+* Software & Web Applications
+* IT Training and Academic Research
+
+## Research
+
+My research interests focus on the impact of emerging technologies on individuals, organizations, and society.
+
+### Featured Research
+
+**AI: The Silent Listener — How Generative AI Tools Become Unintentional Threats to Personal Privacy**
+
+This research examines privacy risks associated with generative AI and the ways users may unintentionally expose personal information while interacting with AI tools.
+
+The research was presented at the **7th IRCIEST, Batangas State University**, where it received recognition as **Best Presenter in the AI category**.
+
+## Technology Projects
+
+Some of my practical IT work includes:
+
+* Visitor Management System
+* Vehicle Registration System
+* Flask/Python Web Applications
+* QR Code-based systems
+* Excel-based information systems
+* Network and systems solutions
+* Windows and server administration
+
+## Technical Skills
+
+`Python` `Flask` `HTML` `CSS` `JavaScript` `SQLite` `Pandas` `OpenPyXL` `Excel` `QR Codes` `Windows Server` `Networking` `MikroTik` `VirtualBox` `Technical Support` `AI Research`
+
+## Professional Philosophy
+
+> Technology is most valuable when it solves real problems, improves people's lives, and creates opportunities for learning and growth.
+
+## Connect
+
+**Professional Portfolio:** Coming soon
+
+**LinkedIn:** Add LinkedIn profile
+
+**Email:** Add professional email
+
+---
+
+© Prof. Raja Zahid Siddique
