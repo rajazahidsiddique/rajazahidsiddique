@@ -59,7 +59,9 @@ img {
 
 .nav {
     height: 74px;
+
     background: rgba(8, 17, 31, 0.96);
+
     backdrop-filter: blur(14px);
 
     display: flex;
@@ -70,6 +72,7 @@ img {
 
     position: sticky;
     top: 0;
+
     z-index: 100;
 
     border-bottom: 1px solid var(--line);
@@ -77,7 +80,9 @@ img {
 
 .brand {
     font: 700 23px "Space Grotesk", Inter, Arial, sans-serif;
+
     color: var(--white);
+
     white-space: nowrap;
 }
 
@@ -92,8 +97,11 @@ nav {
 
 nav a {
     color: #c3cfdf;
+
     font-size: 14px;
+
     font-weight: 700;
+
     transition: 0.25s;
 }
 
@@ -103,10 +111,15 @@ nav a:hover {
 
 .menu {
     display: none;
+
     background: none;
+
     border: 0;
+
     color: var(--white);
+
     font-size: 26px;
+
     cursor: pointer;
 }
 
@@ -124,11 +137,13 @@ nav a:hover {
             rgba(84, 214, 176, 0.12),
             transparent 28%
         ),
+
         radial-gradient(
             circle at 70% 80%,
             rgba(126, 167, 255, 0.10),
             transparent 30%
         ),
+
         linear-gradient(
             135deg,
             #08111f 0%,
@@ -141,6 +156,7 @@ nav a:hover {
     padding: 100px 8%;
 
     display: grid;
+
     grid-template-columns: 1.35fr 0.65fr;
 
     gap: 60px;
@@ -150,8 +166,11 @@ nav a:hover {
 
 .eyebrow {
     letter-spacing: 2.5px;
+
     font-size: 12px;
+
     font-weight: 800;
+
     color: var(--accent);
 
     margin: 0 0 14px;
@@ -176,7 +195,9 @@ nav a:hover {
 
 .lead {
     max-width: 730px;
+
     color: #b8c5d6;
+
     font-size: 18px;
 }
 
@@ -187,7 +208,9 @@ nav a:hover {
 
 .buttons {
     display: flex;
+
     gap: 14px;
+
     margin: 34px 0;
 }
 
@@ -205,6 +228,7 @@ nav a:hover {
 
 .primary {
     background: var(--accent);
+
     color: #07131f;
 }
 
@@ -240,7 +264,9 @@ nav a:hover {
 
 .quick {
     display: flex;
+
     gap: 42px;
+
     margin-top: 55px;
 }
 
@@ -263,8 +289,9 @@ nav a:hover {
 ========================================================= */
 
 .hero-card {
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
+
+    max-width: 100%;
 
     background: var(--card);
 
@@ -278,40 +305,80 @@ nav a:hover {
 
     box-shadow: var(--shadow);
 
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
 /* =========================================================
-   PERSONAL PHOTO
-   photo5.jpg
-   EXACT DISPLAY: 450 × 300 PX
-   3:2 RATIO
+   PORTRAIT WRAPPER
 ========================================================= */
 
-.portrait-photo {
-    display: block;
+.portrait-wrapper {
+    width: 288px;
 
-    width: 450px !important;
-    height: 300px !important;
+    height: 192px;
 
-    max-width: none !important;
-    max-height: none !important;
+    max-width: 288px;
 
-    object-fit: cover;
+    max-height: 192px;
 
-    object-position: center;
+    min-width: 288px;
+
+    min-height: 192px;
 
     margin: 0 auto;
+
+    overflow: hidden;
 
     border-radius: 16px;
 
     border: 1px solid #304b6b;
 
+    background: #0d1828;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PERSONAL PHOTO
+   EXACTLY 288 x 192 PIXELS
+   = APPROX. 3 x 2 INCH AT 96 DPI
+========================================================= */
+
+.portrait-photo {
+    display: block !important;
+
+    width: 288px !important;
+
+    height: 192px !important;
+
+    min-width: 288px !important;
+
+    min-height: 192px !important;
+
+    max-width: 288px !important;
+
+    max-height: 192px !important;
+
+    object-fit: cover !important;
+
+    object-position: center center;
+
+    margin: 0 !important;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 15px;
+
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.35);
 
     background: #0d1828;
+
+    box-sizing: border-box;
 }
 
 
@@ -329,6 +396,7 @@ nav a:hover {
 
 .hero-card span {
     color: #8fa1b8;
+
     font-size: 13px;
 }
 
@@ -400,6 +468,7 @@ nav a:hover {
 .info-card span,
 .info-card small {
     display: block;
+
     color: var(--muted);
 }
 
@@ -431,6 +500,7 @@ nav a:hover {
     max-width: 1250px;
 
     margin-left: auto;
+
     margin-right: auto;
 }
 
@@ -467,6 +537,7 @@ nav a:hover {
     top: 8px;
 
     width: 10px;
+
     height: 10px;
 
     background: var(--accent);
@@ -561,7 +632,7 @@ nav a:hover {
 
 
 /* =========================================================
-   BEST PRESENTER AWARD PHOTO
+   BEST PRESENTER PHOTO
 ========================================================= */
 
 .award-photo {
@@ -668,12 +739,12 @@ nav a:hover {
 
 .project-icon {
     width: 45px;
+
     height: 45px;
 
     border-radius: 10px;
 
-    background:
-        rgba(84, 214, 176, 0.10);
+    background: rgba(84, 214, 176, 0.10);
 
     color: var(--accent);
 
@@ -822,6 +893,7 @@ footer {
         top: 74px;
 
         left: 0;
+
         right: 0;
 
         background: #08111f;
@@ -853,23 +925,50 @@ footer {
 
     .hero-card {
         width: 100%;
+
         max-width: 500px;
+
+        margin: 0 auto;
     }
 
-    /*
-       Mobile photo:
-       Keep exact 3:2 ratio,
-       but scale down to fit phone screen.
-    */
+    /* ==============================================
+       MOBILE PHOTO — STILL EXACTLY 288 x 192
+    ============================================== */
+
+    .portrait-wrapper {
+        width: 288px !important;
+
+        height: 192px !important;
+
+        min-width: 288px !important;
+
+        min-height: 192px !important;
+
+        max-width: 288px !important;
+
+        max-height: 192px !important;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
 
     .portrait-photo {
-        width: min(450px, 100%) !important;
+        width: 288px !important;
 
-        height: auto !important;
+        height: 192px !important;
 
-        aspect-ratio: 3 / 2;
+        min-width: 288px !important;
 
-        object-fit: cover;
+        min-height: 192px !important;
+
+        max-width: 288px !important;
+
+        max-height: 192px !important;
+
+        object-fit: cover !important;
+
+        margin: 0 !important;
     }
 
     .about-grid,
