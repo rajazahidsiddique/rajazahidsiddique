@@ -1,7 +1,7 @@
 /* =========================================================
    PROF. RAJA ZAHID SIDDIQUE
    DARK NAVY / TEAL PROFESSIONAL THEME
-========================================================= */
+   ========================================================= */
 
 :root {
     --bg: #08111f;
@@ -25,7 +25,7 @@
 
 /* =========================================================
    GLOBAL
-========================================================= */
+   ========================================================= */
 
 * {
     box-sizing: border-box;
@@ -56,11 +56,10 @@ img {
 
 /* =========================================================
    NAVIGATION
-========================================================= */
+   ========================================================= */
 
 .nav {
     height: 74px;
-
     background: rgba(8, 17, 31, 0.96);
     backdrop-filter: blur(14px);
 
@@ -68,7 +67,7 @@ img {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 7%;
+    padding: 0 5%;
 
     position: sticky;
     top: 0;
@@ -115,7 +114,7 @@ nav a:hover {
 
 /* =========================================================
    HERO
-========================================================= */
+   ========================================================= */
 
 .hero {
     min-height: 680px;
@@ -140,13 +139,12 @@ nav a:hover {
 
     color: var(--white);
 
-    padding: 100px 8%;
+    padding: 90px 6%;
 
     display: grid;
-    grid-template-columns: 1.35fr 0.65fr;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
 
-    gap: 60px;
-
+    gap: 55px;
     align-items: center;
 }
 
@@ -155,21 +153,18 @@ nav a:hover {
     font-size: 12px;
     font-weight: 800;
     color: var(--accent);
-
     margin: 0 0 14px;
-
     text-transform: uppercase;
 }
 
 .hero h1 {
-    font: 700 clamp(48px, 7vw, 88px) / 1.02
+    font: 700 clamp(48px, 6vw, 82px) / 1.02
         "Space Grotesk", Inter, Arial, sans-serif;
 
     letter-spacing: -3px;
-
     margin: 0 0 25px;
-
     color: var(--heading);
+    max-width: 700px;
 }
 
 .hero h1 span {
@@ -178,78 +173,60 @@ nav a:hover {
 
 .lead {
     max-width: 730px;
-
     color: #b8c5d6;
-
     font-size: 18px;
 }
 
 
 /* =========================================================
    BUTTONS
-========================================================= */
+   ========================================================= */
 
 .buttons {
     display: flex;
-
     gap: 14px;
-
     margin: 34px 0;
 }
 
 .btn {
     display: inline-block;
-
     padding: 12px 21px;
-
     border-radius: 8px;
-
     font-weight: 700;
-
     transition: 0.25s;
 }
 
 .primary {
     background: var(--accent);
-
     color: #07131f;
 }
 
 .primary:hover {
     transform: translateY(-2px);
-
     background: #72e4c3;
-
-    box-shadow:
-        0 10px 30px rgba(84, 214, 176, 0.25);
+    box-shadow: 0 10px 30px rgba(84, 214, 176, 0.25);
 }
 
 .ghost {
     border: 1px solid #40516a;
-
     color: var(--white);
-
     background: transparent;
 }
 
 .ghost:hover {
     border-color: var(--accent);
-
     color: var(--accent);
-
     background: rgba(84, 214, 176, 0.06);
 }
 
 
 /* =========================================================
    QUICK STATS
-========================================================= */
+   ========================================================= */
 
 .quick {
     display: flex;
-
     gap: 42px;
-
     margin-top: 55px;
 }
 
@@ -269,13 +246,12 @@ nav a:hover {
 
 /* =========================================================
    PROFILE CARD
-========================================================= */
+   ========================================================= */
 
 .hero-card {
     background: var(--card);
 
     border: 1px solid #2a405d;
-
     border-radius: 24px;
 
     padding: 25px;
@@ -284,9 +260,8 @@ nav a:hover {
 
     box-shadow: var(--shadow);
 
-    /* Keeps the card compact and centered */
     width: 100%;
-    max-width: 500px;
+    max-width: 380px;
 
     margin-left: auto;
     margin-right: auto;
@@ -295,16 +270,15 @@ nav a:hover {
 
 /* =========================================================
    PERSONAL PHOTO
-   LARGE PORTRAIT
-   NO WHITE SIDE BARS
-   NO 3 x 2 LANDSCAPE BOX
-========================================================= */
+   IMPORTANT:
+   PHOTO IS PORTRAIT — NOT 3:2 LANDSCAPE
+   ========================================================= */
 
 .portrait-photo {
-    width: 330px !important;
-    height: 430px !important;
+    width: 280px !important;
+    height: 360px !important;
 
-    max-width: 100% !important;
+    max-width: none !important;
     max-height: none !important;
 
     display: block;
@@ -312,11 +286,10 @@ nav a:hover {
     margin: 0 auto;
 
     /*
-       COVER fills the portrait frame.
-       This removes the white side bars.
+       The original photo is portrait.
+       Cover fills the portrait frame.
     */
     object-fit: cover !important;
-
     object-position: center center !important;
 
     border-radius: 16px;
@@ -332,38 +305,32 @@ nav a:hover {
 
 /* =========================================================
    HERO PHOTO CAPTION
-========================================================= */
+   ========================================================= */
 
 .hero-card p {
     margin: 18px 0 0;
-
     font-weight: 700;
-
     color: var(--white);
 }
 
 .hero-card span {
     color: #8fa1b8;
-
     font-size: 13px;
 }
 
 
 /* =========================================================
    GENERAL SECTIONS
-========================================================= */
+   ========================================================= */
 
 .section {
-    padding: 100px 8%;
-
+    padding: 100px 6%;
     max-width: 1250px;
-
     margin: auto;
 }
 
 .section-head {
     max-width: 800px;
-
     margin-bottom: 45px;
 }
 
@@ -381,15 +348,12 @@ nav a:hover {
 
 /* =========================================================
    ABOUT
-========================================================= */
+   ========================================================= */
 
 .about-grid {
     display: grid;
-
     grid-template-columns: 1.5fr 0.8fr;
-
     gap: 60px;
-
     font-size: 17px;
 }
 
@@ -404,7 +368,6 @@ nav a:hover {
     background: var(--card);
 
     border: 1px solid var(--line);
-
     border-radius: 16px;
 
     padding: 28px;
@@ -416,37 +379,30 @@ nav a:hover {
 .info-card span,
 .info-card small {
     display: block;
-
     color: var(--muted);
 }
 
 .info-card strong {
     display: block;
-
     font-size: 20px;
-
     margin: 10px 0;
-
     color: var(--heading);
 }
 
 
 /* =========================================================
    DARK SECTION
-========================================================= */
+   ========================================================= */
 
 .dark {
     max-width: none;
-
     background: var(--section);
-
     color: var(--text);
 }
 
 .dark > .section-head,
 .dark > .timeline {
     max-width: 1250px;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -454,17 +410,15 @@ nav a:hover {
 
 /* =========================================================
    TIMELINE
-========================================================= */
+   ========================================================= */
 
 .timeline {
     border-left: 1px solid #30445f;
-
     padding-left: 30px;
 }
 
 .timeline article {
     display: grid;
-
     grid-template-columns: 100px 1fr;
 
     gap: 25px;
@@ -480,7 +434,6 @@ nav a:hover {
     position: absolute;
 
     left: -36px;
-
     top: 8px;
 
     width: 10px;
@@ -495,28 +448,24 @@ nav a:hover {
 
 .timeline span {
     color: var(--accent);
-
     font-weight: 800;
 }
 
 .timeline h3 {
     margin: 0 0 5px;
-
     font-size: 20px;
-
     color: var(--white);
 }
 
 .timeline p {
     margin: 0;
-
     color: #99a9bd;
 }
 
 
 /* =========================================================
    RESEARCH FEATURE
-========================================================= */
+   ========================================================= */
 
 .feature {
     display: grid;
@@ -572,14 +521,13 @@ nav a:hover {
 
 .muted {
     font-size: 14px !important;
-
     color: var(--muted) !important;
 }
 
 
 /* =========================================================
    BEST PRESENTER AWARD PHOTO
-========================================================= */
+   ========================================================= */
 
 .award-photo {
     width: 100%;
@@ -589,7 +537,6 @@ nav a:hover {
     height: auto;
 
     margin-top: 25px;
-
     margin-left: 0;
 
     border-radius: 16px;
@@ -607,7 +554,7 @@ nav a:hover {
 
 /* =========================================================
    RESEARCH / PROJECT GRIDS
-========================================================= */
+   ========================================================= */
 
 .research-grid,
 .project-grid {
@@ -620,14 +567,12 @@ nav a:hover {
 
 .card span {
     font-weight: 800;
-
     color: var(--accent);
 }
 
 .card h3,
 .project h3 {
     font-size: 21px;
-
     color: var(--white);
 }
 
@@ -639,7 +584,7 @@ nav a:hover {
 
 /* =========================================================
    ALTERNATE SECTION
-========================================================= */
+   ========================================================= */
 
 .alt {
     background:
@@ -663,7 +608,7 @@ nav a:hover {
 
 /* =========================================================
    PROJECTS
-========================================================= */
+   ========================================================= */
 
 .project {
     transition: 0.25s;
@@ -682,7 +627,6 @@ nav a:hover {
 
 .project-icon {
     width: 45px;
-
     height: 45px;
 
     border-radius: 10px;
@@ -692,7 +636,6 @@ nav a:hover {
     color: var(--accent);
 
     display: grid;
-
     place-items: center;
 
     font-weight: 800;
@@ -714,7 +657,7 @@ nav a:hover {
 
 /* =========================================================
    SKILLS
-========================================================= */
+   ========================================================= */
 
 .skills {
     display: flex;
@@ -752,17 +695,15 @@ nav a:hover {
 
 /* =========================================================
    QUOTE
-========================================================= */
+   ========================================================= */
 
 .quote {
     text-align: center;
-
     max-width: 950px;
 }
 
 .quote h2 {
     font-size: 42px;
-
     color: var(--white);
 }
 
@@ -773,7 +714,7 @@ nav a:hover {
 
 /* =========================================================
    CONTACT
-========================================================= */
+   ========================================================= */
 
 .contact {
     display: grid;
@@ -789,27 +730,25 @@ nav a:hover {
 
 .contact-card a {
     color: var(--accent);
-
     font-weight: 700;
 }
 
 .contact-card a:hover {
     color: var(--white);
-
     text-decoration: underline;
 }
 
 
 /* =========================================================
    FOOTER
-========================================================= */
+   ========================================================= */
 
 footer {
     background: #050b14;
 
     color: #8d9cb0;
 
-    padding: 25px 8%;
+    padding: 25px 6%;
 
     display: flex;
 
@@ -824,7 +763,7 @@ footer {
 
 /* =========================================================
    MOBILE
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 800px) {
 
@@ -834,9 +773,7 @@ footer {
         position: absolute;
 
         top: 74px;
-
         left: 0;
-
         right: 0;
 
         background: #08111f;
@@ -860,128 +797,6 @@ footer {
         display: block;
     }
 
-
-    /* HERO */
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        padding-top: 70px;
-
-        gap: 45px;
-    }
-
-
-    /* PROFILE CARD */
-
-    .hero-card {
-        max-width: 380px;
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-        padding: 20px;
-    }
-
-
-    /* =====================================================
-       PERSONAL PHOTO MOBILE
-       LARGE PORTRAIT
-    ===================================================== */
-
-    .portrait-photo {
-        width: 280px !important;
-
-        height: 360px !important;
-
-        max-width: 100% !important;
-
-        max-height: none !important;
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-        object-fit: cover !important;
-
-        object-position: center center !important;
-    }
-
-
-    /* ABOUT / CONTACT */
-
-    .about-grid,
-    .contact {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* RESEARCH / PROJECTS */
-
-    .research-grid,
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* QUICK STATS */
-
-    .quick {
-        gap: 22px;
-
-        flex-wrap: wrap;
-    }
-
-    .quick strong {
-        font-size: 23px;
-    }
-
-
-    /* HERO TITLE */
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-
-
-    /* RESEARCH FEATURE */
-
-    .feature {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* TIMELINE */
-
-    .timeline article {
-        grid-template-columns: 80px 1fr;
-    }
-
-
-    /* AWARD PHOTO */
-
-    .award-photo {
-        max-width: 100%;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        flex-direction: column;
-
-        gap: 8px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE DEVICES
-========================================================= */
-
-@media (max-width: 420px) {
-
     .nav {
         padding: 0 5%;
     }
@@ -991,14 +806,94 @@ footer {
     }
 
     .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 70px;
         padding-left: 6%;
         padding-right: 6%;
     }
 
+    .hero-card {
+        max-width: 380px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* =====================================================
+       PORTRAIT PHOTO MOBILE
+       ===================================================== */
+
+    .portrait-photo {
+        width: 250px !important;
+        height: 330px !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+
+
+    .about-grid,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .research-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .quick strong {
+        font-size: 23px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline article {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .award-photo {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-top: 55px;
+    }
+
     .hero h1 {
         font-size: 48px;
-
-        letter-spacing: -2px;
     }
 
     .lead {
@@ -1010,21 +905,11 @@ footer {
     }
 
     .hero-card {
-        width: 100%;
+        padding: 18px;
     }
 
     .portrait-photo {
-        width: 250px !important;
-
-        height: 325px !important;
-    }
-
-    .quick {
-        gap: 18px;
-    }
-
-    .section {
-        padding-left: 6%;
-        padding-right: 6%;
+        width: 230px !important;
+        height: 300px !important;
     }
 }
