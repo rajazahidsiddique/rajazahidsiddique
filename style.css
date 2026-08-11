@@ -4,6 +4,7 @@
 ========================================================= */
 
 :root {
+
     --bg: #08111f;
     --section: #0b1626;
     --panel: #0d192b;
@@ -19,7 +20,9 @@
     --accent2: #7ea7ff;
 
     --white: #ffffff;
-    --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+    --shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -36,10 +39,18 @@ html {
 }
 
 body {
+
     margin: 0;
+
     background: var(--bg);
+
     color: var(--text);
-    font-family: Inter, Arial, sans-serif;
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
     line-height: 1.7;
 }
 
@@ -49,7 +60,6 @@ a {
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
@@ -59,26 +69,43 @@ img {
 ========================================================= */
 
 .nav {
+
     height: 74px;
-    background: rgba(8, 17, 31, 0.96);
+
+    background:
+        rgba(8, 17, 31, 0.96);
+
     backdrop-filter: blur(14px);
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     padding: 0 7%;
 
     position: sticky;
+
     top: 0;
+
     z-index: 100;
 
-    border-bottom: 1px solid var(--line);
+    border-bottom:
+        1px solid var(--line);
 }
 
 .brand {
-    font: 700 23px "Space Grotesk", Inter, Arial, sans-serif;
+
+    font:
+        700 23px
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
+
     color: var(--white);
+
     white-space: nowrap;
 }
 
@@ -87,14 +114,20 @@ img {
 }
 
 nav {
+
     display: flex;
+
     gap: 28px;
 }
 
 nav a {
+
     color: #c3cfdf;
+
     font-size: 14px;
+
     font-weight: 700;
+
     transition: 0.25s;
 }
 
@@ -103,11 +136,17 @@ nav a:hover {
 }
 
 .menu {
+
     display: none;
+
     background: none;
+
     border: 0;
+
     color: var(--white);
+
     font-size: 26px;
+
     cursor: pointer;
 }
 
@@ -117,19 +156,23 @@ nav a:hover {
 ========================================================= */
 
 .hero {
+
     min-height: 680px;
 
     background:
+
         radial-gradient(
             circle at 85% 25%,
             rgba(84, 214, 176, 0.12),
             transparent 28%
         ),
+
         radial-gradient(
             circle at 70% 80%,
             rgba(126, 167, 255, 0.10),
             transparent 30%
         ),
+
         linear-gradient(
             135deg,
             #08111f 0%,
@@ -142,27 +185,45 @@ nav a:hover {
     padding: 100px 8%;
 
     display: grid;
-    grid-template-columns: 1.35fr 0.65fr;
+
+    grid-template-columns:
+        1.35fr 0.65fr;
 
     gap: 60px;
+
     align-items: center;
 }
 
 .eyebrow {
+
     letter-spacing: 2.5px;
+
     font-size: 12px;
+
     font-weight: 800;
+
     color: var(--accent);
-    margin: 0 0 14px;
+
+    margin:
+        0 0 14px;
+
     text-transform: uppercase;
 }
 
 .hero h1 {
-    font: 700 clamp(48px, 7vw, 88px) / 1.02
-        "Space Grotesk", Inter, Arial, sans-serif;
+
+    font:
+        700 clamp(48px, 7vw, 88px) / 1.02
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
 
     letter-spacing: -3px;
-    margin: 0 0 25px;
+
+    margin:
+        0 0 25px;
+
     color: var(--heading);
 }
 
@@ -171,8 +232,11 @@ nav a:hover {
 }
 
 .lead {
+
     max-width: 730px;
+
     color: #b8c5d6;
+
     font-size: 18px;
 }
 
@@ -182,40 +246,73 @@ nav a:hover {
 ========================================================= */
 
 .buttons {
+
     display: flex;
+
     gap: 14px;
-    margin: 34px 0;
+
+    margin:
+        34px 0;
 }
 
 .btn {
+
     display: inline-block;
-    padding: 12px 21px;
+
+    padding:
+        12px 21px;
+
     border-radius: 8px;
+
     font-weight: 700;
+
     transition: 0.25s;
 }
 
 .primary {
-    background: var(--accent);
-    color: #07131f;
+
+    background:
+        var(--accent);
+
+    color:
+        #07131f;
 }
 
 .primary:hover {
-    transform: translateY(-2px);
-    background: #72e4c3;
-    box-shadow: 0 10px 30px rgba(84, 214, 176, 0.25);
+
+    transform:
+        translateY(-2px);
+
+    background:
+        #72e4c3;
+
+    box-shadow:
+        0 10px 30px
+        rgba(84, 214, 176, 0.25);
 }
 
 .ghost {
-    border: 1px solid #40516a;
-    color: var(--white);
-    background: transparent;
+
+    border:
+        1px solid #40516a;
+
+    color:
+        var(--white);
+
+    background:
+        transparent;
 }
 
 .ghost:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: rgba(84, 214, 176, 0.06);
+
+    border-color:
+        var(--accent);
+
+    color:
+        var(--accent);
+
+    background:
+        rgba(84, 214, 176, 0.06);
 }
 
 
@@ -224,18 +321,27 @@ nav a:hover {
 ========================================================= */
 
 .quick {
+
     display: flex;
+
     gap: 42px;
+
     margin-top: 55px;
 }
 
 .quick strong {
+
     display: block;
 
-    font: 700 28px
-        "Space Grotesk", Inter, Arial, sans-serif;
+    font:
+        700 28px
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
 
-    color: var(--white);
+    color:
+        var(--white);
 }
 
 .quick small {
@@ -248,57 +354,120 @@ nav a:hover {
 ========================================================= */
 
 .hero-card {
-    background: var(--card);
 
-    border: 1px solid #2a405d;
-    border-radius: 24px;
+    background:
+        var(--card);
 
-    padding: 25px;
+    border:
+        1px solid #2a405d;
 
-    text-align: center;
+    border-radius:
+        24px;
 
-    box-shadow: var(--shadow);
+    padding:
+        25px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+/* =========================================================
+   PHOTO WRAPPER
+   EXACT 3 x 2 INCH DISPLAY AREA
+
+   3 inch = 288 CSS pixels
+   2 inch = 192 CSS pixels
+
+   The wrapper controls the SIZE.
+   The image controls the ORIGINAL RATIO.
+========================================================= */
+
+.portrait-wrapper {
+
+    width:
+        3in;
+
+    height:
+        2in;
+
+    max-width:
+        100%;
+
+    margin:
+        0 auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    overflow:
+        hidden;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #304b6b;
+
+    border-radius:
+        16px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.35);
 }
 
 
 /* =========================================================
    PERSONAL PHOTO
-   photo5.jpg
-   EXACT 3 x 2 INCH
-   COMPLETE IMAGE — NO CROPPING
+
+   IMPORTANT:
+   DO NOT FORCE THE IMAGE TO 3:2.
+
+   The original photo is portrait.
+   We keep its natural aspect ratio.
+
+   This means:
+   - complete head visible
+   - complete suit visible
+   - no top/bottom cropping
+   - photo remains inside 3 x 2 inch area
 ========================================================= */
 
 .portrait-photo {
-    width: 3in !important;
-    height: 2in !important;
 
-    /*
-       Do NOT allow the global img max-width
-       to resize the image unexpectedly.
-    */
-    max-width: none !important;
-    max-height: none !important;
+    height:
+        100%;
 
-    display: block;
+    width:
+        auto;
 
-    margin: 0 auto;
+    max-width:
+        none;
 
-    /*
-       IMPORTANT:
-       contain = show the complete image
-       cover   = crops the image
-    */
-    object-fit: contain !important;
-    object-position: center center !important;
+    max-height:
+        none;
 
-    border-radius: 16px;
+    flex:
+        0 0 auto;
 
-    border: 1px solid #304b6b;
+    display:
+        block;
 
-    background: #ffffff;
+    object-fit:
+        contain;
 
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.35);
+    object-position:
+        center center;
 }
 
 
@@ -307,14 +476,24 @@ nav a:hover {
 ========================================================= */
 
 .hero-card p {
-    margin: 18px 0 0;
-    font-weight: 700;
-    color: var(--white);
+
+    margin:
+        18px 0 0;
+
+    font-weight:
+        700;
+
+    color:
+        var(--white);
 }
 
 .hero-card span {
-    color: #8fa1b8;
-    font-size: 13px;
+
+    color:
+        #8fa1b8;
+
+    font-size:
+        13px;
 }
 
 
@@ -323,25 +502,43 @@ nav a:hover {
 ========================================================= */
 
 .section {
-    padding: 100px 8%;
-    max-width: 1250px;
-    margin: auto;
+
+    padding:
+        100px 8%;
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
 }
 
 .section-head {
-    max-width: 800px;
-    margin-bottom: 45px;
+
+    max-width:
+        800px;
+
+    margin-bottom:
+        45px;
 }
 
 .section h2 {
-    font: 700 clamp(34px, 5vw, 55px) / 1.1
-        "Space Grotesk", Inter, Arial, sans-serif;
 
-    letter-spacing: -1.5px;
+    font:
+        700 clamp(34px, 5vw, 55px) / 1.1
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
 
-    margin: 0;
+    letter-spacing:
+        -1.5px;
 
-    color: var(--heading);
+    margin:
+        0;
+
+    color:
+        var(--heading);
 }
 
 
@@ -350,42 +547,70 @@ nav a:hover {
 ========================================================= */
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
-    gap: 60px;
-    font-size: 17px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 0.8fr;
+
+    gap:
+        60px;
+
+    font-size:
+        17px;
 }
 
 .about-grid p {
-    color: #b7c4d5;
+    color:
+        #b7c4d5;
 }
 
 .info-card,
 .card,
 .project,
 .contact-card {
-    background: var(--card);
 
-    border: 1px solid var(--line);
-    border-radius: 16px;
+    background:
+        var(--card);
 
-    padding: 28px;
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        16px;
+
+    padding:
+        28px;
 
     box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.20);
+        0 8px 30px
+        rgba(0, 0, 0, 0.20);
 }
 
 .info-card span,
 .info-card small {
-    display: block;
-    color: var(--muted);
+
+    display:
+        block;
+
+    color:
+        var(--muted);
 }
 
 .info-card strong {
-    display: block;
-    font-size: 20px;
-    margin: 10px 0;
-    color: var(--heading);
+
+    display:
+        block;
+
+    font-size:
+        20px;
+
+    margin:
+        10px 0;
+
+    color:
+        var(--heading);
 }
 
 
@@ -394,16 +619,28 @@ nav a:hover {
 ========================================================= */
 
 .dark {
-    max-width: none;
-    background: var(--section);
-    color: var(--text);
+
+    max-width:
+        none;
+
+    background:
+        var(--section);
+
+    color:
+        var(--text);
 }
 
 .dark > .section-head,
 .dark > .timeline {
-    max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
+
+    max-width:
+        1250px;
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
 }
 
 
@@ -412,53 +649,91 @@ nav a:hover {
 ========================================================= */
 
 .timeline {
-    border-left: 1px solid #30445f;
-    padding-left: 30px;
+
+    border-left:
+        1px solid #30445f;
+
+    padding-left:
+        30px;
 }
 
 .timeline article {
-    display: grid;
-    grid-template-columns: 100px 1fr;
 
-    gap: 25px;
+    display:
+        grid;
 
-    margin: 0 0 35px;
+    grid-template-columns:
+        100px 1fr;
 
-    position: relative;
+    gap:
+        25px;
+
+    margin:
+        0 0 35px;
+
+    position:
+        relative;
 }
 
 .timeline article::before {
-    content: "";
 
-    position: absolute;
+    content:
+        "";
 
-    left: -36px;
-    top: 8px;
+    position:
+        absolute;
 
-    width: 10px;
-    height: 10px;
+    left:
+        -36px;
 
-    background: var(--accent);
+    top:
+        8px;
 
-    border-radius: 50%;
+    width:
+        10px;
 
-    border: 3px solid var(--section);
+    height:
+        10px;
+
+    background:
+        var(--accent);
+
+    border-radius:
+        50%;
+
+    border:
+        3px solid
+        var(--section);
 }
 
 .timeline span {
-    color: var(--accent);
-    font-weight: 800;
+
+    color:
+        var(--accent);
+
+    font-weight:
+        800;
 }
 
 .timeline h3 {
-    margin: 0 0 5px;
-    font-size: 20px;
-    color: var(--white);
+
+    margin:
+        0 0 5px;
+
+    font-size:
+        20px;
+
+    color:
+        var(--white);
 }
 
 .timeline p {
-    margin: 0;
-    color: #99a9bd;
+
+    margin:
+        0;
+
+    color:
+        #99a9bd;
 }
 
 
@@ -467,87 +742,133 @@ nav a:hover {
 ========================================================= */
 
 .feature {
-    display: grid;
 
-    grid-template-columns: 100px 1fr;
+    display:
+        grid;
 
-    gap: 30px;
+    grid-template-columns:
+        100px 1fr;
 
-    background: var(--card);
+    gap:
+        30px;
 
-    color: var(--text);
+    background:
+        var(--card);
 
-    border: 1px solid var(--line);
+    color:
+        var(--text);
 
-    border-radius: 20px;
+    border:
+        1px solid var(--line);
 
-    padding: 40px;
+    border-radius:
+        20px;
 
-    margin-bottom: 25px;
+    padding:
+        40px;
 
-    box-shadow: var(--shadow);
+    margin-bottom:
+        25px;
+
+    box-shadow:
+        var(--shadow);
 }
 
 .feature-number {
-    font: 700 50px
-        "Space Grotesk", Inter, Arial, sans-serif;
 
-    color: var(--accent);
+    font:
+        700 50px
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
+
+    color:
+        var(--accent);
 }
 
 .feature h3 {
-    font: 700 28px / 1.25
-        "Space Grotesk", Inter, Arial, sans-serif;
 
-    margin: 5px 0 15px;
+    font:
+        700 28px / 1.25
+        "Space Grotesk",
+        Inter,
+        Arial,
+        sans-serif;
 
-    color: var(--white);
+    margin:
+        5px 0 15px;
+
+    color:
+        var(--white);
 }
 
 .feature p {
-    color: #afbdd0;
+    color:
+        #afbdd0;
 }
 
 .tag {
-    font-size: 11px;
 
-    letter-spacing: 2px;
+    font-size:
+        11px;
 
-    color: var(--accent) !important;
+    letter-spacing:
+        2px;
 
-    font-weight: 800;
+    color:
+        var(--accent) !important;
+
+    font-weight:
+        800;
 }
 
 .muted {
-    font-size: 14px !important;
-    color: var(--muted) !important;
+
+    font-size:
+        14px !important;
+
+    color:
+        var(--muted) !important;
 }
 
 
 /* =========================================================
-   BEST PRESENTER AWARD PHOTO
+   BEST PRESENTER PHOTO
 ========================================================= */
 
 .award-photo {
-    width: 100%;
 
-    max-width: 650px;
+    width:
+        100%;
 
-    height: auto;
+    max-width:
+        650px;
 
-    margin-top: 25px;
-    margin-left: 0;
+    height:
+        auto;
 
-    border-radius: 16px;
+    margin-top:
+        25px;
 
-    border: 1px solid #304b6b;
+    margin-left:
+        0;
+
+    border-radius:
+        16px;
+
+    border:
+        1px solid #304b6b;
 
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.35);
+        0 15px 40px
+        rgba(0, 0, 0, 0.35);
 
-    object-fit: contain;
+    object-fit:
+        contain;
 
-    background: #0d1828;
+    background:
+        #0d1828;
 }
 
 
@@ -557,27 +878,41 @@ nav a:hover {
 
 .research-grid,
 .project-grid {
-    display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    display:
+        grid;
 
-    gap: 20px;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        20px;
 }
 
 .card span {
-    font-weight: 800;
-    color: var(--accent);
+
+    font-weight:
+        800;
+
+    color:
+        var(--accent);
 }
 
 .card h3,
 .project h3 {
-    font-size: 21px;
-    color: var(--white);
+
+    font-size:
+        21px;
+
+    color:
+        var(--white);
 }
 
 .card p,
 .project p {
-    color: #aab8ca;
+
+    color:
+        #aab8ca;
 }
 
 
@@ -586,6 +921,7 @@ nav a:hover {
 ========================================================= */
 
 .alt {
+
     background:
         linear-gradient(
             180deg,
@@ -593,15 +929,21 @@ nav a:hover {
             #08111f
         );
 
-    max-width: none;
+    max-width:
+        none;
 }
 
 .alt > .section-head,
 .alt > .project-grid {
-    max-width: 1250px;
 
-    margin-left: auto;
-    margin-right: auto;
+    max-width:
+        1250px;
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
 }
 
 
@@ -610,47 +952,70 @@ nav a:hover {
 ========================================================= */
 
 .project {
-    transition: 0.25s;
+    transition:
+        0.25s;
 }
 
 .project:hover {
-    transform: translateY(-5px);
 
-    background: var(--card-hover);
+    transform:
+        translateY(-5px);
 
-    border-color: #3a526e;
+    background:
+        var(--card-hover);
+
+    border-color:
+        #3a526e;
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.35);
+        0 15px 35px
+        rgba(0, 0, 0, 0.35);
 }
 
 .project-icon {
-    width: 45px;
-    height: 45px;
 
-    border-radius: 10px;
+    width:
+        45px;
 
-    background: rgba(84, 214, 176, 0.10);
+    height:
+        45px;
 
-    color: var(--accent);
+    border-radius:
+        10px;
 
-    display: grid;
-    place-items: center;
+    background:
+        rgba(84, 214, 176, 0.10);
 
-    font-weight: 800;
+    color:
+        var(--accent);
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    font-weight:
+        800;
 
     border:
-        1px solid rgba(84, 214, 176, 0.20);
+        1px solid
+        rgba(84, 214, 176, 0.20);
 }
 
 .stack {
-    color: #7f94ad;
 
-    font-size: 12px;
+    color:
+        #7f94ad;
 
-    font-weight: 700;
+    font-size:
+        12px;
 
-    margin-top: 20px;
+    font-weight:
+        700;
+
+    margin-top:
+        20px;
 }
 
 
@@ -659,33 +1024,48 @@ nav a:hover {
 ========================================================= */
 
 .skills {
-    display: flex;
 
-    flex-wrap: wrap;
+    display:
+        flex;
 
-    gap: 12px;
+    flex-wrap:
+        wrap;
+
+    gap:
+        12px;
 }
 
 .skills span {
-    padding: 10px 16px;
 
-    border-radius: 100px;
+    padding:
+        10px 16px;
 
-    border: 1px solid #2b4059;
+    border-radius:
+        100px;
 
-    background: #101f34;
+    border:
+        1px solid #2b4059;
 
-    color: #d8e3f0;
+    background:
+        #101f34;
 
-    font-size: 14px;
+    color:
+        #d8e3f0;
 
-    transition: 0.2s;
+    font-size:
+        14px;
+
+    transition:
+        0.2s;
 }
 
 .skills span:hover {
-    border-color: var(--accent);
 
-    color: var(--accent);
+    border-color:
+        var(--accent);
+
+    color:
+        var(--accent);
 
     background:
         rgba(84, 214, 176, 0.08);
@@ -697,17 +1077,26 @@ nav a:hover {
 ========================================================= */
 
 .quote {
-    text-align: center;
-    max-width: 950px;
+
+    text-align:
+        center;
+
+    max-width:
+        950px;
 }
 
 .quote h2 {
-    font-size: 42px;
-    color: var(--white);
+
+    font-size:
+        42px;
+
+    color:
+        var(--white);
 }
 
 .quote p {
-    color: var(--muted);
+    color:
+        var(--muted);
 }
 
 
@@ -716,25 +1105,38 @@ nav a:hover {
 ========================================================= */
 
 .contact {
-    display: grid;
 
-    grid-template-columns: 1.2fr 0.8fr;
+    display:
+        grid;
 
-    gap: 60px;
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    gap:
+        60px;
 }
 
 .contact p {
-    color: #9eafc3;
+    color:
+        #9eafc3;
 }
 
 .contact-card a {
-    color: var(--accent);
-    font-weight: 700;
+
+    color:
+        var(--accent);
+
+    font-weight:
+        700;
 }
 
 .contact-card a:hover {
-    color: var(--white);
-    text-decoration: underline;
+
+    color:
+        var(--white);
+
+    text-decoration:
+        underline;
 }
 
 
@@ -743,17 +1145,24 @@ nav a:hover {
 ========================================================= */
 
 footer {
-    background: #050b14;
 
-    color: #8d9cb0;
+    background:
+        #050b14;
 
-    padding: 25px 8%;
+    color:
+        #8d9cb0;
 
-    display: flex;
+    padding:
+        25px 8%;
 
-    justify-content: space-between;
+    display:
+        flex;
 
-    font-size: 13px;
+    justify-content:
+        space-between;
+
+    font-size:
+        13px;
 
     border-top:
         1px solid var(--line);
@@ -766,106 +1175,192 @@ footer {
 
 @media (max-width: 800px) {
 
+
     nav {
-        display: none;
 
-        position: absolute;
+        display:
+            none;
 
-        top: 74px;
-        left: 0;
-        right: 0;
+        position:
+            absolute;
 
-        background: #08111f;
+        top:
+            74px;
 
-        padding: 20px 8%;
+        left:
+            0;
 
-        flex-direction: column;
+        right:
+            0;
+
+        background:
+            #08111f;
+
+        padding:
+            20px 8%;
+
+        flex-direction:
+            column;
 
         border-bottom:
             1px solid var(--line);
 
         box-shadow:
-            0 10px 25px rgba(0, 0, 0, 0.40);
+            0 10px 25px
+            rgba(0, 0, 0, 0.40);
     }
+
 
     .nav.open nav {
-        display: flex;
+        display:
+            flex;
     }
+
 
     .menu {
-        display: block;
+        display:
+            block;
     }
+
 
     .hero {
-        grid-template-columns: 1fr;
 
-        padding-top: 70px;
+        grid-template-columns:
+            1fr;
+
+        padding-top:
+            70px;
     }
 
+
     .hero-card {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+
+        width:
+            100%;
+
+        max-width:
+            340px;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
     }
 
 
     /* =====================================================
-       PERSONAL PHOTO MOBILE
-       EXACT 3 x 2 INCH
-       NO CROPPING
+       MOBILE PHOTO
+       SAME 3 x 2 INCH DISPLAY AREA
+       COMPLETE IMAGE — NO CROPPING
     ===================================================== */
 
+    .portrait-wrapper {
+
+        width:
+            3in;
+
+        height:
+            2in;
+
+        max-width:
+            100%;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+    }
+
+
     .portrait-photo {
-        width: 3in !important;
-        height: 2in !important;
 
-        max-width: none !important;
-        max-height: none !important;
+        height:
+            100%;
 
-        margin-left: auto;
-        margin-right: auto;
+        width:
+            auto;
 
-        object-fit: contain !important;
-        object-position: center center !important;
+        max-width:
+            none;
+
+        max-height:
+            none;
+
+        object-fit:
+            contain;
+
+        object-position:
+            center center;
     }
 
 
     .about-grid,
     .contact {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
     }
+
 
     .research-grid,
     .project-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
     }
+
 
     .quick {
-        gap: 22px;
+
+        gap:
+            22px;
     }
+
 
     .quick strong {
-        font-size: 23px;
+
+        font-size:
+            23px;
     }
+
 
     .hero h1 {
-        letter-spacing: -2px;
+
+        letter-spacing:
+            -2px;
     }
+
 
     .feature {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+            1fr;
     }
+
 
     .timeline article {
-        grid-template-columns: 80px 1fr;
+
+        grid-template-columns:
+            80px 1fr;
     }
+
 
     .award-photo {
-        max-width: 100%;
+
+        max-width:
+            100%;
     }
 
+
     footer {
-        flex-direction: column;
-        gap: 8px;
+
+        flex-direction:
+            column;
+
+        gap:
+            8px;
     }
+
 }
