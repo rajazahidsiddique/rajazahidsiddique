@@ -49,6 +49,7 @@ a {
 }
 
 img {
+    max-width: 100%;
     display: block;
 }
 
@@ -59,9 +60,7 @@ img {
 
 .nav {
     height: 74px;
-
     background: rgba(8, 17, 31, 0.96);
-
     backdrop-filter: blur(14px);
 
     display: flex;
@@ -72,7 +71,6 @@ img {
 
     position: sticky;
     top: 0;
-
     z-index: 100;
 
     border-bottom: 1px solid var(--line);
@@ -80,9 +78,7 @@ img {
 
 .brand {
     font: 700 23px "Space Grotesk", Inter, Arial, sans-serif;
-
     color: var(--white);
-
     white-space: nowrap;
 }
 
@@ -97,11 +93,8 @@ nav {
 
 nav a {
     color: #c3cfdf;
-
     font-size: 14px;
-
     font-weight: 700;
-
     transition: 0.25s;
 }
 
@@ -111,15 +104,10 @@ nav a:hover {
 
 .menu {
     display: none;
-
     background: none;
-
     border: 0;
-
     color: var(--white);
-
     font-size: 26px;
-
     cursor: pointer;
 }
 
@@ -137,13 +125,11 @@ nav a:hover {
             rgba(84, 214, 176, 0.12),
             transparent 28%
         ),
-
         radial-gradient(
             circle at 70% 80%,
             rgba(126, 167, 255, 0.10),
             transparent 30%
         ),
-
         linear-gradient(
             135deg,
             #08111f 0%,
@@ -156,25 +142,18 @@ nav a:hover {
     padding: 100px 8%;
 
     display: grid;
-
     grid-template-columns: 1.35fr 0.65fr;
 
     gap: 60px;
-
     align-items: center;
 }
 
 .eyebrow {
     letter-spacing: 2.5px;
-
     font-size: 12px;
-
     font-weight: 800;
-
     color: var(--accent);
-
     margin: 0 0 14px;
-
     text-transform: uppercase;
 }
 
@@ -183,9 +162,7 @@ nav a:hover {
         "Space Grotesk", Inter, Arial, sans-serif;
 
     letter-spacing: -3px;
-
     margin: 0 0 25px;
-
     color: var(--heading);
 }
 
@@ -195,9 +172,7 @@ nav a:hover {
 
 .lead {
     max-width: 730px;
-
     color: #b8c5d6;
-
     font-size: 18px;
 }
 
@@ -208,52 +183,38 @@ nav a:hover {
 
 .buttons {
     display: flex;
-
     gap: 14px;
-
     margin: 34px 0;
 }
 
 .btn {
     display: inline-block;
-
     padding: 12px 21px;
-
     border-radius: 8px;
-
     font-weight: 700;
-
     transition: 0.25s;
 }
 
 .primary {
     background: var(--accent);
-
     color: #07131f;
 }
 
 .primary:hover {
     transform: translateY(-2px);
-
     background: #72e4c3;
-
-    box-shadow:
-        0 10px 30px rgba(84, 214, 176, 0.25);
+    box-shadow: 0 10px 30px rgba(84, 214, 176, 0.25);
 }
 
 .ghost {
     border: 1px solid #40516a;
-
     color: var(--white);
-
     background: transparent;
 }
 
 .ghost:hover {
     border-color: var(--accent);
-
     color: var(--accent);
-
     background: rgba(84, 214, 176, 0.06);
 }
 
@@ -264,9 +225,7 @@ nav a:hover {
 
 .quick {
     display: flex;
-
     gap: 42px;
-
     margin-top: 55px;
 }
 
@@ -289,14 +248,9 @@ nav a:hover {
 ========================================================= */
 
 .hero-card {
-    width: 500px;
-
-    max-width: 100%;
-
     background: var(--card);
 
     border: 1px solid #2a405d;
-
     border-radius: 24px;
 
     padding: 25px;
@@ -304,81 +258,47 @@ nav a:hover {
     text-align: center;
 
     box-shadow: var(--shadow);
-
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   PORTRAIT WRAPPER
-========================================================= */
-
-.portrait-wrapper {
-    width: 288px;
-
-    height: 192px;
-
-    max-width: 288px;
-
-    max-height: 192px;
-
-    min-width: 288px;
-
-    min-height: 192px;
-
-    margin: 0 auto;
-
-    overflow: hidden;
-
-    border-radius: 16px;
-
-    border: 1px solid #304b6b;
-
-    background: #0d1828;
-
-    box-sizing: border-box;
 }
 
 
 /* =========================================================
    PERSONAL PHOTO
-   EXACTLY 288 x 192 PIXELS
-   = APPROX. 3 x 2 INCH AT 96 DPI
+   photo5.jpg
+   EXACT 3 x 2 INCH
+   COMPLETE IMAGE — NO CROPPING
 ========================================================= */
 
 .portrait-photo {
-    display: block !important;
+    width: 3in !important;
+    height: 2in !important;
 
-    width: 288px !important;
+    /*
+       Do NOT allow the global img max-width
+       to resize the image unexpectedly.
+    */
+    max-width: none !important;
+    max-height: none !important;
 
-    height: 192px !important;
+    display: block;
 
-    min-width: 288px !important;
+    margin: 0 auto;
 
-    min-height: 192px !important;
+    /*
+       IMPORTANT:
+       contain = show the complete image
+       cover   = crops the image
+    */
+    object-fit: contain !important;
+    object-position: center center !important;
 
-    max-width: 288px !important;
+    border-radius: 16px;
 
-    max-height: 192px !important;
+    border: 1px solid #304b6b;
 
-    object-fit: cover !important;
-
-    object-position: center center;
-
-    margin: 0 !important;
-
-    padding: 0;
-
-    border: 0;
-
-    border-radius: 15px;
+    background: #ffffff;
 
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.35);
-
-    background: #0d1828;
-
-    box-sizing: border-box;
 }
 
 
@@ -388,15 +308,12 @@ nav a:hover {
 
 .hero-card p {
     margin: 18px 0 0;
-
     font-weight: 700;
-
     color: var(--white);
 }
 
 .hero-card span {
     color: #8fa1b8;
-
     font-size: 13px;
 }
 
@@ -407,15 +324,12 @@ nav a:hover {
 
 .section {
     padding: 100px 8%;
-
     max-width: 1250px;
-
     margin: auto;
 }
 
 .section-head {
     max-width: 800px;
-
     margin-bottom: 45px;
 }
 
@@ -437,11 +351,8 @@ nav a:hover {
 
 .about-grid {
     display: grid;
-
     grid-template-columns: 1.5fr 0.8fr;
-
     gap: 60px;
-
     font-size: 17px;
 }
 
@@ -456,7 +367,6 @@ nav a:hover {
     background: var(--card);
 
     border: 1px solid var(--line);
-
     border-radius: 16px;
 
     padding: 28px;
@@ -468,17 +378,13 @@ nav a:hover {
 .info-card span,
 .info-card small {
     display: block;
-
     color: var(--muted);
 }
 
 .info-card strong {
     display: block;
-
     font-size: 20px;
-
     margin: 10px 0;
-
     color: var(--heading);
 }
 
@@ -489,18 +395,14 @@ nav a:hover {
 
 .dark {
     max-width: none;
-
     background: var(--section);
-
     color: var(--text);
 }
 
 .dark > .section-head,
 .dark > .timeline {
     max-width: 1250px;
-
     margin-left: auto;
-
     margin-right: auto;
 }
 
@@ -511,13 +413,11 @@ nav a:hover {
 
 .timeline {
     border-left: 1px solid #30445f;
-
     padding-left: 30px;
 }
 
 .timeline article {
     display: grid;
-
     grid-template-columns: 100px 1fr;
 
     gap: 25px;
@@ -533,11 +433,9 @@ nav a:hover {
     position: absolute;
 
     left: -36px;
-
     top: 8px;
 
     width: 10px;
-
     height: 10px;
 
     background: var(--accent);
@@ -549,21 +447,17 @@ nav a:hover {
 
 .timeline span {
     color: var(--accent);
-
     font-weight: 800;
 }
 
 .timeline h3 {
     margin: 0 0 5px;
-
     font-size: 20px;
-
     color: var(--white);
 }
 
 .timeline p {
     margin: 0;
-
     color: #99a9bd;
 }
 
@@ -626,18 +520,15 @@ nav a:hover {
 
 .muted {
     font-size: 14px !important;
-
     color: var(--muted) !important;
 }
 
 
 /* =========================================================
-   BEST PRESENTER PHOTO
+   BEST PRESENTER AWARD PHOTO
 ========================================================= */
 
 .award-photo {
-    display: block;
-
     width: 100%;
 
     max-width: 650px;
@@ -645,7 +536,6 @@ nav a:hover {
     height: auto;
 
     margin-top: 25px;
-
     margin-left: 0;
 
     border-radius: 16px;
@@ -676,14 +566,12 @@ nav a:hover {
 
 .card span {
     font-weight: 800;
-
     color: var(--accent);
 }
 
 .card h3,
 .project h3 {
     font-size: 21px;
-
     color: var(--white);
 }
 
@@ -713,7 +601,6 @@ nav a:hover {
     max-width: 1250px;
 
     margin-left: auto;
-
     margin-right: auto;
 }
 
@@ -739,7 +626,6 @@ nav a:hover {
 
 .project-icon {
     width: 45px;
-
     height: 45px;
 
     border-radius: 10px;
@@ -749,7 +635,6 @@ nav a:hover {
     color: var(--accent);
 
     display: grid;
-
     place-items: center;
 
     font-weight: 800;
@@ -813,13 +698,11 @@ nav a:hover {
 
 .quote {
     text-align: center;
-
     max-width: 950px;
 }
 
 .quote h2 {
     font-size: 42px;
-
     color: var(--white);
 }
 
@@ -846,13 +729,11 @@ nav a:hover {
 
 .contact-card a {
     color: var(--accent);
-
     font-weight: 700;
 }
 
 .contact-card a:hover {
     color: var(--white);
-
     text-decoration: underline;
 }
 
@@ -891,9 +772,7 @@ footer {
         position: absolute;
 
         top: 74px;
-
         left: 0;
-
         right: 0;
 
         background: #08111f;
@@ -924,52 +803,32 @@ footer {
     }
 
     .hero-card {
-        width: 100%;
-
-        max-width: 500px;
-
-        margin: 0 auto;
-    }
-
-    /* ==============================================
-       MOBILE PHOTO — STILL EXACTLY 288 x 192
-    ============================================== */
-
-    .portrait-wrapper {
-        width: 288px !important;
-
-        height: 192px !important;
-
-        min-width: 288px !important;
-
-        min-height: 192px !important;
-
-        max-width: 288px !important;
-
-        max-height: 192px !important;
-
+        max-width: 400px;
         margin-left: auto;
-
         margin-right: auto;
     }
 
+
+    /* =====================================================
+       PERSONAL PHOTO MOBILE
+       EXACT 3 x 2 INCH
+       NO CROPPING
+    ===================================================== */
+
     .portrait-photo {
-        width: 288px !important;
+        width: 3in !important;
+        height: 2in !important;
 
-        height: 192px !important;
+        max-width: none !important;
+        max-height: none !important;
 
-        min-width: 288px !important;
+        margin-left: auto;
+        margin-right: auto;
 
-        min-height: 192px !important;
-
-        max-width: 288px !important;
-
-        max-height: 192px !important;
-
-        object-fit: cover !important;
-
-        margin: 0 !important;
+        object-fit: contain !important;
+        object-position: center center !important;
     }
+
 
     .about-grid,
     .contact {
@@ -1007,7 +866,6 @@ footer {
 
     footer {
         flex-direction: column;
-
         gap: 8px;
     }
 }
