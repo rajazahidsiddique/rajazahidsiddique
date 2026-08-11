@@ -1,13 +1,23 @@
+css = r'''/* =========================================================
+   PROF. RAJA ZAHID SIDDIQUE — BLACK / GOLD THEME
+   Replace the complete contents of style.css with this file.
+   ========================================================= */
+
 :root {
-  --bg: #ffffff;
-  --section: #f7f9fb;
-  --card: #ffffff;
-  --text: #172033;
-  --heading: #0f172a;
-  --muted: #64748b;
-  --line: #e2e8f0;
-  --accent: #087f5b;
+  --bg: #0b0d0f;
+  --section: #101317;
+  --card: #15181c;
+  --card-hover: #1b1f24;
+  --text: #d7dbe0;
+  --heading: #ffffff;
+  --muted: #9aa3ad;
+  --line: #292e35;
+  --gold: #f4c542;
+  --gold-dark: #d8a900;
+  --gold-soft: rgba(244, 197, 66, 0.12);
+  --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
 }
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +28,545 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #172033;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.7;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVIGATION */
+
+.nav {
+  height: 74px;
+  background: rgba(11, 13, 15, 0.96);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font: 700 22px "Space Grotesk", Arial, sans-serif;
+  color: var(--heading);
+  white-space: nowrap;
+}
+
+.brand span {
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  gap: 27px;
+}
+
+nav a {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--gold);
+  font-size: 25px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 680px;
+  background:
+    radial-gradient(circle at 82% 35%, rgba(244, 197, 66, 0.08), transparent 28%),
+    linear-gradient(135deg, #0b0d0f 0%, #101317 100%);
+  color: var(--heading);
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font: 700 clamp(48px, 7vw, 82px)/1.02 "Space Grotesk", Arial, sans-serif;
+  letter-spacing: -3px;
+  margin: 0 0 25px;
+  color: var(--heading);
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.lead {
+  max-width: 730px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin: 34px 0;
+}
+
+.btn {
+  padding: 12px 21px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.primary {
+  background: var(--gold);
+  color: #0b0d0f;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  background: #ffd85c;
+  box-shadow: 0 8px 25px rgba(244, 197, 66, 0.2);
+}
+
+.ghost {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.ghost:hover {
+  background: var(--gold);
+  color: #0b0d0f;
+}
+
+.quick {
+  display: flex;
+  gap: 42px;
+  margin-top: 55px;
+}
+
+.quick strong {
+  display: block;
+  font: 700 28px "Space Grotesk", Arial, sans-serif;
+  color: var(--heading);
+}
+
+.quick small {
+  color: var(--muted);
+}
+
+/* PROFILE CARD */
+
+.hero-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.portrait-placeholder {
+  height: 360px;
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, #191d22, #0f1215);
+  display: grid;
+  place-items: center;
+  font: 700 72px "Space Grotesk", Arial, sans-serif;
+  color: var(--gold);
+  border: 1px solid #343a42;
+}
+
+.hero-card p {
+  margin: 18px 0 0;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.hero-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 100px 8%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.section-head {
+  max-width: 800px;
+  margin-bottom: 45px;
+}
+
+.section h2 {
+  font: 700 clamp(34px, 5vw, 55px)/1.1 "Space Grotesk", Arial, sans-serif;
+  letter-spacing: -1.5px;
+  margin: 0;
+  color: var(--heading);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 60px;
+  font-size: 17px;
+}
+
+.info-card,
+.card,
+.project,
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.info-card span,
+.info-card small {
+  display: block;
+  color: var(--muted);
+}
+
+.info-card strong {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--heading);
+}
+
+/* DARK SECTIONS */
+
+.dark {
+  max-width: none;
+  background: var(--section);
+  color: var(--text);
+}
+
+.dark > .section-head,
+.dark > .timeline {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TIMELINE */
+
+.timeline {
+  border-left: 2px solid #343a42;
+  padding-left: 30px;
+}
+
+.timeline article {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 25px;
+  margin: 0 0 35px;
+  position: relative;
+}
+
+.timeline article:before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  border: 3px solid var(--section);
+}
+
+.timeline span {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.timeline h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: var(--heading);
+}
+
+.timeline p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* RESEARCH FEATURE */
+
+.feature {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 30px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow);
+}
+
+.feature-number {
+  font: 700 50px "Space Grotesk", Arial, sans-serif;
+  color: var(--gold);
+}
+
+.feature h3 {
+  font: 700 28px/1.25 "Space Grotesk", Arial, sans-serif;
+  margin: 5px 0 15px;
+  color: var(--heading);
+}
+
+.feature p {
+  color: var(--muted);
+}
+
+.tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold) !important;
+  font-weight: 800;
+}
+
+.muted {
+  font-size: 14px !important;
+  color: var(--muted);
+}
+
+/* RESEARCH & PROJECTS */
+
+.research-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card span {
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.card h3,
+.project h3 {
+  font-size: 21px;
+  color: var(--heading);
+}
+
+.alt {
+  background: #0d1013;
+  max-width: none;
+}
+
+.alt > .section-head,
+.alt > .project-grid {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project {
+  transition: 0.25s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover);
+  border-color: #3a3f46;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.project-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: var(--gold-soft);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.stack {
+  color: #8d97a2;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* SKILLS */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  padding: 10px 16px;
+  border-radius: 100px;
+  border: 1px solid #343a42;
+  background: #15181c;
+  color: #d8dde2;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.skills span:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-soft);
+}
+
+/* QUOTE */
+
+.quote {
+  text-align: center;
+  max-width: 950px;
+}
+
+.quote h2 {
+  font-size: 42px;
+  color: var(--heading);
+}
+
+/* CONTACT */
+
+.contact {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+}
+
+.contact p {
+  color: var(--muted);
+}
+
+.contact-card a {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.contact-card a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background: #080a0c;
+  color: #7f8994;
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background: #0b0d0f;
+    padding: 20px 8%;
+    flex-direction: column;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav.open nav {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+  }
+
+  .hero-card {
+    max-width: 400px;
+  }
+
+  .about-grid,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick {
+    gap: 22px;
+  }
+
+  .quick strong {
+    font-size: 23px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline article {
+    grid-template-columns: 80px 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+'''
+path = "/mnt/data/style.css"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(css)
+print(path)
